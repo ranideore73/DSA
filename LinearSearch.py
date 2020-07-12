@@ -1,15 +1,14 @@
-def search(arr, n, x):
-    for i in range(0,n):
-        if (arr[i] == x):
+def search(arr, n, k):
+    for i in range(0, n):
+        if (arr[i] == k):
             return i
     return -1
-
-arr = [2,3,4,10,40]
-x = 10
+arr = list(map(int, input().split()))
 n = len(arr)
-result = search(arr, n, x)
-if (result == -1):
-    print("not present")
+k = int(input())
+r = search(arr, n, k)
+if (r == -1):
+    print("not found")
 else:
-    print("present at ", result)
+    print("found at",r)
     
