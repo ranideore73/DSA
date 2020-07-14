@@ -1,6 +1,8 @@
-def binarySearch(arr, l, r, x):
+def binarySearch(arr, x):
+    l = 0
+    r = len(arr)-1
     while l <= r:
-        mid = l + (r-l) // 2
+        mid = l + (r-1) // 2
         if arr[mid] == x:
             return mid
         elif arr[mid] < x:
@@ -12,7 +14,7 @@ def binarySearch(arr, l, r, x):
 arr = list(map(int, input().split()))
 x = int(input()) 
 
-result = binarySearch(arr, 0, len(arr)-1, x)
+result = binarySearch(arr, x)
 if result != -1:
     print("Element present at", result)
 else:
