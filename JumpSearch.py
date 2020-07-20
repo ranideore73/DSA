@@ -18,7 +18,7 @@ def jumpSearch( arr , x):
           
         
         if prev == min(step, n): 
-            return -1
+            return -1()
       
     
     if arr[int(prev)] == x: 
@@ -26,7 +26,6 @@ def jumpSearch( arr , x):
       
     return -1
   
-
 arr = list(map(int, input("Enter array:").split()))
 x = int(input())
  
