@@ -23,7 +23,7 @@ def jumpSearch( arr , x ):
 	
 	return -1
 
-# Driver code to test function 
+
 arr = list(map(int, input("Enter Sorted Array").split()))
 x = int(input("Enetr element for searching"))
 n = len(arr) 
