@@ -6,8 +6,8 @@ def interpolationSearch(arr, x):
     while lo <= hi and x >= arr[lo] and x <= arr[hi]: 
         if lo == hi: 
             if arr[lo] == x:  
-                return lo; 
-            return -1; 
+                return lo
+            return -1 
           
          
         pos  = lo + int(((float(hi - lo) / 
@@ -19,11 +19,11 @@ def interpolationSearch(arr, x):
    
         
         if arr[pos] < x: 
-            lo = pos + 1; 
+            lo = pos + 1
    
         
         else: 
-            hi = pos - 1; 
+            hi = pos - 1
       
     return -1
   
